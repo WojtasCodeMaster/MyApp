@@ -1,4 +1,4 @@
-package com.test.demo.uSLocalDateFormatter;
+package com.test.demo.date;
 
 import org.springframework.format.Formatter;
 

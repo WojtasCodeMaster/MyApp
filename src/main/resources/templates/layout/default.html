@@ -9,11 +9,26 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 </head>
 <body>
+<ul id="lang-dropdown" class="dropdown-content">
+    <li><a href="?lang=pl">Polski</a></li>
+    <li><a href="?lang=en">Angielski</a></li>
+</ul>
+<nav>
+    <div class="nav-wrapper indigo">
+         <ul class="right">
+             <li>
+                 <a class="dropdown-button" href="#!" data-activates="lang-dropdown"><i class="medium material-icons right">language</i>Język</a>
+             </li>
+         </ul>
+    </div>
+</nav>
     <section layout:fragment="content">
         <p>Zawartość Strony</p>
     </section>
 
     <script src="/webjars/jquery/2.1.4/jquery.js"></script>
     <script src="/webjars/materializecss/0.100.2/js/materialize.js"></script>
+    <script type="text/javascript" layout:fragment="script">
+    </script>
 </body>
 </html>
